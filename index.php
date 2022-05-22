@@ -29,22 +29,22 @@
 			<br><br>  
 			<p>Multiplier: </p><input type="number" name="userNumber2" step="1" min="0">   
 			<br><br>
-			<input type = "submit" name = "submit" value="submit">
+			<input type = "submit" name = "submit">
 		</form>
 		<br>
 			
 		<!-- Variables and Calculations -->
 		<?php  
-			if(isset($_POST['Submit'])) {  
-				$numb1 = $_POST['userNumber1'];   
-				$numb2 = $_POST['userNumber2'];
+			if(isset($_POST['submit'])) {  
+				$numb1 = intval($_POST['userNumber1']);   
+				$numb2 = intval($_POST['userNumber2']);
 				$sum = 0; 
 
-				for ($counter = 0; $counter < $numb1; $counter + 1) {
+				for ($counter = 0; $counter < $numb1; $counter++) {
 					$sum = $sum + $numb2;
 				}
 
-				echo "<p>The sum is" . $sum;
+				echo "The sum is " . $sum;
 			}
 		?>
 	</body>
