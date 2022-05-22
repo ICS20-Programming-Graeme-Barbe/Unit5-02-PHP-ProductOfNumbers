@@ -44,7 +44,7 @@
 					$sum = $sum + $numb2;
 				}
 
-				echo "The sum is " . $sum;
+				echo "<p>The product is " . $sum;
 			}
 		?>
 	</body>
